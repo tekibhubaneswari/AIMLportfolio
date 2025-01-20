@@ -1,0 +1,272 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #001f33; /* Dark blue background */
+    color: #ffffff; /* White text */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002846;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Logo Styling */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.navbar .logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Navbar Links Styling */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #00d4ff;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #66e0ff;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #002846;
+    color: #ffffff;
+    margin: 20px;
+    height: 100vh; /* Set height of the hero section to 100% of the viewport */
+}
+
+/* AI Chapter Section Styling */
+.ai-chapter {
+    width: 50%;
+    height: 100%;
+    background-color: #003b5c; /* Slightly different background color */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ai-chapter h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00d4ff;
+}
+
+.ai-chapter p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Hero Text Styling */
+.hero-text {
+    width: 50%; /* Set width to 50% for hero text */
+}
+
+.hero-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00d4ff;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00d4ff;
+    color: #002846;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #66e0ff;
+    transform: scale(1.05);
+}
+
+/* Image Section Styling */
+.hero-image {
+    width: 30%; /* Set image width to 30% */
+    height: 100vh; /* Set image height to 100% of viewport height */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the full space */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Container for Section Styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* About Section */
+.about-section {
+    background-color: #002846;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* About Us Paragraph Styling */
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;  /* Justify text from both sides */
+    margin: 20px auto;    /* Adds space around the paragraphs */
+    max-width: 2000px;     /* Limits the width of the paragraph for readability */
+}
+
+/* Services Section */
+.services-section {
+    background-color: #002846;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Container for Service Boxes */
+.services-container {
+    display: flex;
+    overflow-x: auto;  /* Allows horizontal scrolling */
+    gap: 20px;
+    padding: 10px 0;
+}
+
+/* Individual Service Box */
+.service-box {
+    background-color: #001f33;  /* Darker color for the box */
+    color: #fff;
+    padding: 20px;
+    min-width: 250px;  /* Set a minimum width for each box */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Center-align content inside boxes */
+}
+
+/* Service Box Image */
+.service-box img {
+    width: 120px;           /* Set the width of the image */
+    height: 120px;          /* Set the height of the image to match the width */
+    object-fit: cover;      /* Ensures the image covers the area without distorting */
+    border-radius: 50%;     /* Makes the image rounded (square but rounded corners) */
+    margin-bottom: 15px;    /* Space between the image and text */
+}
+
+/* Service Box Title */
+.service-box h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+
+
+/* Hover Effect for Service Boxes */
+.service-box:hover {
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Darker shadow */
+}
+
+/* Mobile Responsiveness: Adjusts the width of the boxes */
+@media screen and (max-width: 768px) {
+    .service-box {
+        min-width: 200px;  /* Adjust for smaller screens */
+    }
+}
+
+
+
+
+
+/* Contact Section */
+.contact-section {
+    background-color: #003b5c;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    background-color: #00d4ff;
+    color: #002846;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #66e0ff;
+}
