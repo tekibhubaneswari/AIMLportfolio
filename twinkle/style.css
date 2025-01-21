@@ -13,7 +13,7 @@ body {
     align-items: center;
     background-color: #002846;
     padding: 10px 20px;
-    color: white;
+    color: #66e0ff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -24,16 +24,32 @@ body {
     gap: 10px;
 }
 
-.logo-img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-.navbar .logo h1 {
-    margin: 0;
-    font-size: 1.5em;
+.logo-img {
+    width: 40px; /* Logo width */
+    height: 40px; /* Logo height */
+    object-fit: cover; /* Ensures the logo is not stretched */
+    background-color: black; /* Black background */
+    border-radius: 50%; /* Makes the logo round */
+    margin-right: 10px; /* Space between the logos */
 }
+
+h1 {
+    margin: 0;
+    font-size: 2em; /* Increase font size */
+    color: #fff; /* White text color */
+    font-family: 'Poppins', sans-serif; /* Stylish font */
+    font-weight: 700; /* Bold weight */
+    letter-spacing: 2px; /* Spacing between letters */
+    text-transform: uppercase; /* Make text uppercase */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+    padding: 5px; /* Space around text */
+}
+
 
 /* Navbar Links Styling */
 .nav-links {
@@ -55,17 +71,36 @@ body {
     color: #66e0ff;
 }
 
-/* Hero Section Styling */
 .hero-section {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 50px;
-    background-color: #002846;
-    color: #ffffff;
-    margin: 20px;
-    height: 100vh; /* Set height of the hero section to 100% of the viewport */
+    align-items: center;
+    padding: 40px 20px; /* Increase padding to add more space */
+    min-height: 500px; /* Set a minimum height for the section */
+    background-color: #001f33; /* Optional: Maintain consistent background */
 }
+
+
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hero-image {
+    width: 400px; /* Set the width for the rectangle */
+    height: 600px; /* Set the height for the rectangle */
+    margin-top: 10px;
+    border-radius: 8px; /* Slightly rounded corners */
+    object-fit: cover; /* Ensures the image fits perfectly within the rectangle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for emphasis */
+}
+
 
 /* AI Chapter Section Styling */
 .ai-chapter {
@@ -124,13 +159,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Image Section Styling */
-.hero-image {
-    width: 30%; /* Set image width to 30% */
-    height: 100vh; /* Set image height to 100% of viewport height */
-    display: flex;
-    justify-content: flex-end; /* Align image to the right */
-}
 
 .hero-image img {
     width: 100%;
@@ -179,25 +207,44 @@ body {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
-
-/* Container for Service Boxes */
 .services-container {
     display: flex;
     overflow-x: auto;  /* Allows horizontal scrolling */
-    gap: 20px;
-    padding: 10px 0;
+    gap: 20px;         /* Adjusts the gap between service boxes */
+    padding: 10px 10px; /* Adjust the padding to reduce gap between service boxes and the container edges */
 }
 
 /* Individual Service Box */
 .service-box {
     background-color: #001f33;  /* Darker color for the box */
     color: #fff;
-    padding: 20px;
-    min-width: 250px;  /* Set a minimum width for each box */
+    padding: 20px;              /* Padding inside each box */
+    width: 250px;               /* Set a fixed width for each box */
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  /* Soft shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center; /* Center-align content inside boxes */
+    text-align: center;         /* Center-align content inside boxes */
+    margin: 0 10px;             /* Remove excessive gap from edges and reduce horizontal margin */
+    flex-shrink: 0;             /* Prevent shrinking */
+}
+
+/* Customizing the scrollbar */
+.services-container::-webkit-scrollbar {
+    width: 8px;  /* Width of the scrollbar */
+}
+
+.services-container::-webkit-scrollbar-track {
+    background-color: #002846;  /* Track color */
+}
+
+.services-container::-webkit-scrollbar-thumb {
+    background-color: #00d4ff;  /* Thumb color */
+    border-radius: 10px;  /* Round corners for the scrollbar thumb */
+}
+
+/* Hover effect for scrollbar thumb */
+.services-container::-webkit-scrollbar-thumb:hover {
+    background-color: #66e0ff;  /* Lighter color when hovered */
 }
 
 /* Service Box Image */
@@ -214,6 +261,35 @@ body {
     font-size: 1.8em;
     margin-bottom: 10px;
 }
+.image-carousel {
+    width: 100%; /* Full-width section for the carousel */
+    overflow: hidden; /* Ensures images don't overflow the section */
+    position: relative;
+    background-color: #f4f4f4; /* Optional: Background color for better visibility */
+    padding: 20px 0; /* Optional: Add padding for spacing */
+}
+
+.carousel-container {
+    display: flex;
+    width: calc(200%); /* Double the width for seamless looping */
+    animation: slide 30s linear infinite; /* Slower and smoother transition */
+}
+
+.carousel-image {
+    width: 200px; /* Smaller width for each image */
+    height: 150px; /* Smaller height for each image */
+    object-fit: cover; /* Ensures the image fits nicely without distortion */
+    margin: 0 10px; /* Add spacing between images */
+    flex-shrink: 0;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Animation for smooth sliding */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Scroll halfway, creating a loop effect */
+}
+
 
 
 
@@ -269,4 +345,46 @@ body {
 
 .contact-section button:hover {
     background-color: #66e0ff;
+}
+/* Styling for the carousel */
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    gap: 16px;
+}
+
+.service-box {
+    min-width: 200px; /* Adjust the width based on your design */
+    text-align: center;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 10px;
+    color: #00d4ff;
+}
+
+.right-arrow {
+    right: 10px;
+    color: #00d4ff;
 }
