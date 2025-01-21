@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #001f33; /* Dark blue background */
+    background-color: #121212; /* Dark grey background */
     color: #ffffff; /* White text */
 }
 
@@ -11,9 +11,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #002846;
+    background-color: #1f1f1f; /* Dark grey background */
     padding: 10px 20px;
-    color: #66e0ff;
+    color: #cccccc; /* Light grey text */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -41,7 +41,7 @@ body {
 h1 {
     margin: 0;
     font-size: 2em; /* Increase font size */
-    color: #fff; /* White text color */
+    color: #ffffff; /* White text */
     font-family: 'Poppins', sans-serif; /* Stylish font */
     font-weight: 700; /* Bold weight */
     letter-spacing: 2px; /* Spacing between letters */
@@ -62,13 +62,13 @@ h1 {
 
 .nav-links li a {
     text-decoration: none;
-    color: #00d4ff;
+    color: #cccccc; /* Light grey text */
     font-size: 1em;
     transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-    color: #66e0ff;
+    color: #ffffff; /* White text on hover */
 }
 
 .hero-section {
@@ -77,7 +77,7 @@ h1 {
     align-items: center;
     padding: 40px 20px; /* Increase padding to add more space */
     min-height: 500px; /* Set a minimum height for the section */
-    background-color: #001f33; /* Optional: Maintain consistent background */
+    background-color: #121212; /* Dark grey background */
 }
 
 
@@ -106,7 +106,7 @@ h1 {
 .ai-chapter {
     width: 50%;
     height: 100%;
-    background-color: #003b5c; /* Slightly different background color */
+    background-color: #1f1f1f; /* Dark grey background */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -116,7 +116,7 @@ h1 {
 .ai-chapter h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #00d4ff;
+    color: #cccccc; /* Light grey text */
 }
 
 .ai-chapter p {
@@ -133,7 +133,7 @@ h1 {
 .hero-text h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #00d4ff;
+    color: #cccccc; /* Light grey text */
 }
 
 .hero-text p {
@@ -146,8 +146,8 @@ h1 {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #00d4ff;
-    color: #002846;
+    background-color: #cccccc; /* Light grey background */
+    color: #121212; /* Dark grey text */
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -155,7 +155,7 @@ h1 {
 }
 
 .btn:hover {
-    background-color: #66e0ff;
+    background-color: #ffffff; /* White background on hover */
     transform: scale(1.05);
 }
 
@@ -175,8 +175,8 @@ h1 {
 
 /* About Section */
 .about-section {
-    background-color: #002846;
-    color: #fff;
+    background-color: #1f1f1f; /* Dark grey background */
+    color: #ffffff; /* White text */
     padding: 40px 0;
     text-align: center;
 }
@@ -197,8 +197,8 @@ h1 {
 
 /* Services Section */
 .services-section {
-    background-color: #002846;
-    color: #fff;
+    background-color: #1f1f1f; /* Dark grey background */
+    color: #ffffff; /* White text */
     padding: 40px 0;
     text-align: center;
 }
@@ -207,6 +207,7 @@ h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
+
 .services-container {
     display: flex;
     overflow-x: auto;  /* Allows horizontal scrolling */
@@ -216,8 +217,8 @@ h1 {
 
 /* Individual Service Box */
 .service-box {
-    background-color: #001f33;  /* Darker color for the box */
-    color: #fff;
+    background-color: #121212;  /* Dark grey box */
+    color: #ffffff; /* White text */
     padding: 20px;              /* Padding inside each box */
     width: 250px;               /* Set a fixed width for each box */
     border-radius: 10px;
@@ -234,17 +235,17 @@ h1 {
 }
 
 .services-container::-webkit-scrollbar-track {
-    background-color: #002846;  /* Track color */
+    background-color: #1f1f1f;  /* Track color */
 }
 
 .services-container::-webkit-scrollbar-thumb {
-    background-color: #00d4ff;  /* Thumb color */
+    background-color: #cccccc;  /* Thumb color */
     border-radius: 10px;  /* Round corners for the scrollbar thumb */
 }
 
 /* Hover effect for scrollbar thumb */
 .services-container::-webkit-scrollbar-thumb:hover {
-    background-color: #66e0ff;  /* Lighter color when hovered */
+    background-color: #ffffff;  /* Lighter color when hovered */
 }
 
 /* Service Box Image */
@@ -261,6 +262,7 @@ h1 {
     font-size: 1.8em;
     margin-bottom: 10px;
 }
+
 .image-carousel {
     width: 100%; /* Full-width section for the carousel */
     overflow: hidden; /* Ensures images don't overflow the section */
@@ -290,9 +292,6 @@ h1 {
     100% { transform: translateX(-50%); } /* Scroll halfway, creating a loop effect */
 }
 
-
-
-
 /* Hover Effect for Service Boxes */
 .service-box:hover {
     transform: scale(1.05); /* Slightly increase size */
@@ -306,14 +305,10 @@ h1 {
     }
 }
 
-
-
-
-
 /* Contact Section */
 .contact-section {
-    background-color: #003b5c;
-    color: #fff;
+    background-color: #1f1f1f; /* Dark grey background */
+    color: #ffffff; /* White text */
     padding: 40px 0;
     text-align: center;
 }
@@ -335,8 +330,8 @@ h1 {
 
 .contact-section button {
     padding: 10px 20px;
-    background-color: #00d4ff;
-    color: #002846;
+    background-color: #cccccc; /* Light grey background */
+    color: #121212; /* Dark grey text */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -344,8 +339,9 @@ h1 {
 }
 
 .contact-section button:hover {
-    background-color: #66e0ff;
+    background-color: #ffffff; /* White background on hover */
 }
+
 /* Styling for the carousel */
 .carousel-wrapper {
     display: flex;
@@ -370,7 +366,7 @@ h1 {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    color: #ffffff; /* White arrows */
     border: none;
     border-radius: 50%;
     width: 40px;
@@ -381,10 +377,10 @@ h1 {
 
 .left-arrow {
     left: 10px;
-    color: #00d4ff;
+    color: #cccccc; /* Light grey arrows */
 }
 
 .right-arrow {
     right: 10px;
-    color: #00d4ff;
+    color: #cccccc; /* Light grey arrows */
 }
